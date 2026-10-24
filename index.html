@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ALLXITERCSR</title>
+<style>
+body {
+  margin: 0;
+  background: #080b12;
+  color: white;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+header {
+  background: #111827;
+  padding: 25px 10px;
+  border-bottom: 2px solid #00eaff;
+}
+h1 { color: #00eaff; }
+.panel {
+  margin: 25px 15px;
+  padding: 20px;
+  background: #151d2d;
+  border-radius: 15px;
+}
+button {
+  padding: 12px 20px;
+  background: #00c8ff;
+  color: #061018;
+  border: 0;
+  border-radius: 8px;
+  font-weight: bold;
+}
+input { width: 90%; }
+</style>
+</head>
+<body>
+<header>
+  <h1>ALLXITERCSR</h1>
+  <p>FREE FIRE SETTINGS PANEL</p>
+</header>
+<div class="panel">
+  <h2>Pengaturan Sensitivitas</h2>
+  <p>General: <span id="v">90</span></p>
+  <input type="range" min="0" max="200" value="90"
+  oninput="document.getElementById('v').innerText=this.value">
+  <p>Atur sensitivitas sesuai kenyamananmu.</p>
+  <button onclick="alert('Pengaturan berhasil diperbarui!')">
+  SIMPAN PENGATURAN
+  </button>
+</div>
+</body>
+  </html>
